@@ -1,0 +1,78 @@
+.loginwrapper{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: gray;
+    font-weight: bold;
+    background-image: url("https://wallpaperaccess.com/full/2314983.jpg");
+}
+.loginContainer{
+    max-height: 450px;
+    height: 90%;
+    max-width: 400px;
+    width: 100%;
+    background: #eee;
+    padding: 40px;
+    border-radius: 20px;
+    z-index: 1;
+    position: relative;
+}
+.loginpic{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+    border: 10px solid #4d3278;
+    background: linear-gradient(to right,#9d50bb,#6e48aa);
+    transform: translate(-50% ,-50%);
+}
+.logintitle{
+    text-align: center;
+    margin-top: 30px;
+    color: black;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.loginform1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+label , .links, button{
+    margin-top: 20px;
+}
+label {
+    margin-top: 20px;
+    font-size: 14px;
+    color: gray;
+    font-weight: 400;
+}
+.logininput{
+ width: 100%;
+ padding: 10px;
+ border: none;
+}
+
+.dot{
+    display: inline-block;
+    position: absolute;
+}
+.loginparagraph{
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+}
+.loginancher{
+    color: red;
+    border-bottom: 1px solid blue;
+    cursor: pointer;
+}

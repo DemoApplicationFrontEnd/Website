@@ -1,0 +1,198 @@
+/* Navbar Container */
+.navbar {
+    height: 70px;
+    width: 100%;
+    background-color: rgba(98, 121, 122, 0.378);
+    background: linear-gradient(45deg, #ff6b6b, #ff9e2a); /* Modern gradient */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    transition: all 0.8s ease-in-out;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  
+  }
+  .navbar-left {
+    display: flex;
+    align-items: center;
+}
+  /* Left Section */
+ 
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 20px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    background: rgb(107, 101, 101);
+    padding: 6px 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  .logo-container:hover {
+    transform: scale(1.05);
+}
+  /* Logo Styles */
+  .logo {
+    height: 50px; /* Adjust height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the logo does not get distorted */
+    max-height: 60px; /* Optionally adjust max height for larger screens */
+    opacity: 1; /* Remove any opacity to make the logo clear */
+  }
+  
+  .logo-text {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo-title {
+    font-size: 22px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color:white;
+  }
+  
+  .logo-subtitle {
+    font-size: 16px;
+    color: #ffea00;
+    letter-spacing: 1px;
+    
+
+  }
+  
+  /* Right Section */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+  }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #ffea00;
+    left: 50%;
+    bottom: -5px;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+.nav-link:hover {
+  color: #ffea00;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+}
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: rgba(255, 255, 255, 0.2);
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 200px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .nav-links.active {
+    display: flex;
+}
+    .menu-icon {
+      display: block;
+      color: white;
+    }
+  
+    .navbar {
+      padding: 0 15px;
+    }
+  
+    .quote-btn {
+      padding: 10px 20px;
+    }
+  
+    /* Adjust Logo for smaller screens */
+    .logo {
+      height: 50px;
+      max-height: 60px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo-title {
+      font-size: 18px;
+    }
+  
+    .logo-subtitle {
+      font-size: 14px;
+    }
+  
+    .quote-btn {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    /* Adjust Logo for very small screens */
+    .logo {
+      height: 40px;
+      max-height: 50px;
+    }
+  }
+  
+  /* Animation effect for background color */
+  @keyframes backgroundAnimation {
+    0% {
+      background-color: #ff6b6b;
+    }
+    50% {
+      background-color: #ff9e2a;
+    }
+    100% {
+      background-color: #ff6b6b;
+    }
+  }
+  
+  
+  /* Apply animation to navbar */
+  .navbar {
+    animation: backgroundAnimation 5s ease infinite;
+  }
+  

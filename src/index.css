@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+body {
+    background-color: #000300;
+  } */
+/* Global Styles for Preventing Horizontal Scroll */
+html, body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  width: 100%; /* Ensure width is 100% */
+  box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+}
+
+/* Set the max-width for all main content sections (navbar, body, footer) */
+#root {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll on the root container */
+}
+
+/* Flex and Grid Containers: Prevent Overflow */
+* {
+  box-sizing: border-box; /* Ensure padding and borders are included in element's width/height */
+}
+
+/* Prevent Horizontal Scrolling on Flex or Grid Containers */
+.flex-container, .grid-container {
+  width: 100%;
+  overflow: hidden; /* Prevent overflowing content */
+}
+
+/* For Images, Videos, and Media Elements */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navbar - Ensure it doesn't overflow */
+.navbar {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Footer - Ensure it fits within the screen width */
+.myFooter {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 40px 0;
+}
+
+/* Prevent elements from overflowing */
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Prevent unnecessary scrolling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Set background for body */
+body {
+  background-color: #f5f5f5; /* Set a light background color */
+}

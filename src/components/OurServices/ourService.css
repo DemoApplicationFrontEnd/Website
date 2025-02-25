@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Hero Section */
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+  }
+  
+  .offer-section {
+    flex: 1;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .highlight {
+    color: #FF5E14;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  /* Service Categories */
+  .service-section {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .service-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .service-item {
+    font-size: 18px;
+    padding: 10px 20px;
+    background: #FF5E14;
+    color: white;
+    border-radius: 20px;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .service-item:hover {
+    transform: scale(1.1);
+    background: #e67e22;
+  }
+  
+  /* Projects Section */
+  .projects-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    gap: 20px;
+  }
+  
+  .project-card {
+    width: calc(25% - 20px);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  
+  }
+  
+  .card-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #FF5E14;
+  
+  }
+  
+  .card-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+ 
+  
+  /* Accordion Section */
+  .accordion-section {
+    margin-top: 50px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .accordion-item {
+    
+    padding: 10px;
+  }
+  
+  .accordion-item:hover {
+    background: #f9f9f9;
+  }
+  
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;  /* Push header text & icon apart */
+    align-items: center;             /* Keep them vertically aligned */
+    width: 100%;                     /* Ensure full width */
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    /* Underline effect */
+  }
+  
+  .chevron-icon {
+    width: 20px;     /* Adjust icon size */
+    height: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .projects-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-card {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,80 @@
+/* .wrapper{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 80px);
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-image: url("https://wallpaperaccess.com/full/2314983.jpg");
+}
+.Container{
+    height: 100%;
+    width: 400px;
+    background: #eee;
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+   z-index: 1;
+   border-radius: 8px;
+}
+.pic{
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+    border: 10px solid #4d3278;
+    background: linear-gradient(to right,#9d50bb,#6e48aa);
+    transform: translate(-50% ,-50%);
+}
+.title{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+   
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    height: 80%;
+}
+label , .links, button{
+ 
+}
+label {
+ 
+    font-size: 14px;
+    color: gray;
+    font-weight: 400;
+}
+.input{
+ width: 100%;
+ padding: 10px;
+ border: none;
+}
+
+.dot{
+    display: inline-block;
+    position: absolute;
+}
+.paragraph{
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+}
+.ancher{
+    color: red;
+    border-bottom: 1px solid blue;
+    cursor: pointer;
+} */

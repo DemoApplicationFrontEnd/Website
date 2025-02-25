@@ -1,0 +1,94 @@
+.Container{
+    min-height: calc(100vh - 80px);
+  padding: 0 calc(3.5vw + 5px);
+  position:relative;
+  overflow-x:hidden; 
+
+}
+/* .Container ::before{
+    background: url("") center center / cover
+    no-repeat fixed;
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:-1;
+} */
+/* Ensure container width and responsiveness */
+
+
+/* Responsive container */
+.home-container {
+  width: 100%;
+  overflow: hidden;
+
+  padding: 20px;
+}
+
+/* Centering the content */
+.content-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Image slider wrapper */
+.slider-container {
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Buttons section */
+.button-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Adjust button layout for large screens */
+@media (min-width: 640px) {
+  .button-container {
+    flex-direction: row;
+  }
+}
+
+/* Button styles */
+.quote-button, .learn-more-button {
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 200px;
+  text-align: center;
+}
+
+/* Primary button */
+.quote-button {
+  background-color: #ff5e14;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.quote-button:hover {
+  background-color: #e64e00;
+}
+
+/* Secondary button */
+.learn-more-button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.learn-more-button:hover {
+  background-color: white;
+  color: #1E2A4D;
+}
