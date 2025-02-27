@@ -2,6 +2,7 @@
   "name": "nirmaanconstructions",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://www.nirmaanconstructions.com",
   "dependencies": {
     "@coreui/react": "^4.7.0",
     "@emotion/react": "^11.10.5",
