@@ -25,7 +25,7 @@ export default function Footer() {
         <div className="space-y-4">
           <img src={Logo} alt="Nirmaan Logo" className="w-28" />
           <p className="text-sm text-gray-300 leading-relaxed">
-            Nirmaan Construction is one of the best construction Company. Our
+            Nirmaan Constructions is one of the best construction Company. Our
             company’s motto is to provide an end-to-end, professional
             construction service that goes beyond customer expectations.
           </p>
@@ -146,7 +146,7 @@ export default function Footer() {
 
       {/* Bottom Section */}
       <div className="mt-8 text-center text-sm text-gray-400">
-        © {new Date().getFullYear()} Nirmaan Construction. All rights reserved.
+        © {new Date().getFullYear()} Nirmaan Constructions. All rights reserved.
       </div>
     </footer>
   );
