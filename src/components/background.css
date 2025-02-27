@@ -3,14 +3,20 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: url('./../assets/illustration-construction-site.jpg') no-repeat center center/cover;
+    background: url('./../assets/projectsPics/Newpictures/scrollimg.jpg') no-repeat center center/cover;
+
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5%;
     font-family: 'Poppins', sans-serif;
 }
-
+.homepage-content {
+    position: relative;
+    z-index: 2;
+    color: #fff; /* White text for contrast */
+    text-align: center;
+}
 /* Overlay */
 .overlay {
     width: 100%;
