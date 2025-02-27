@@ -18,8 +18,10 @@
       "sizes": "512x512"
     }
   ],
+  "short_name": "Nirmaan",
+  "name": "Nirmaan Constructions",
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#004AAD",
   "background_color": "#ffffff"
 }
