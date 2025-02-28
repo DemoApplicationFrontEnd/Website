@@ -16,6 +16,7 @@ import OurService from "./components/OurServices/OurService";
 import Ourpackage from "./components/OurPackeges/Ourpackage";
 import Layout from "./components/layout/Layout";
 import { FaWhatsapp } from "react-icons/fa";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           <span className="hidden sm:inline">Need Help?</span>
         </a>
         <Footer />
+        <Analytics />
       </Router>
     </div>
   );
