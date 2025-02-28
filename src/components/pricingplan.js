@@ -7,7 +7,7 @@ import plan3 from "./../assets/PRM.png";
 
 const plans = [
   {
-    title: "Descent",
+    title: "Decent",
     price: "₹1,700/sq.ft",
     gst: "(incl. GST)",
     image: plan1,

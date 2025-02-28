@@ -89,7 +89,7 @@ const Background = () => {
           transition={{ duration: 1 }}
         >
           <motion.div
-            className="consultation-form-container"
+            className=""
             initial={{ x: 50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}

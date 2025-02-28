@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Analytic from "./components/Analytic";
 
@@ -19,6 +20,22 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Analytics } from "@vercel/analytics/react";
 
 function App() {
+  useEffect(() => {
+    // Load Google Analytics script dynamically
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-0TZFQXCJDZ";
+    document.head.appendChild(script);
+
+    // Initialize gtag
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+    window.gtag = gtag;
+    gtag("js", new Date());
+    gtag("config", "G-0TZFQXCJDZ");
+  }, []);
   return (
     <div className="relative">
       <Router>

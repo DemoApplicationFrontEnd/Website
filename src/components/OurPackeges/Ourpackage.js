@@ -49,7 +49,7 @@ const Ourpackage = () => {
                 marginTop: "25px",
               }}
             >
-              Descent
+              Decent
             </p>
             <p>₹1,700/sq.ft</p>
             <p
