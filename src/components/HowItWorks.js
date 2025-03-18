@@ -40,7 +40,7 @@ export default function HowItWorks() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center bg-gradient-to-b from-[#fce4ec] to-[#f8bbd0] min-h-screen py-10 px-4">
+    <div className="flex flex-col items-center bg-gradient-to-b from-[#fce4ec] to-[#f8bbd0] min-h-screen md:min-h-0 py-10 px-4 w-full">
       <h2 className="text-3xl font-bold mb-6 text-gray-800">How it works</h2>
       <p className="text-lg text-gray-600 mb-10 text-center max-w-2xl">
         Our house construction steps are simple and easy to understand: Plan –

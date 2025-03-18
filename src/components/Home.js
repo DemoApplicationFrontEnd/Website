@@ -1,6 +1,5 @@
 import React from "react";
 import "./home.css";
-import Layout from "./layout/Layout";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Iconfinder from "./../assets/iconfinder.png";
 import CalculationIcon from "./../assets/icon_calculation_blueprint.png";
@@ -14,9 +13,6 @@ import NearMeSharpIcon from "@mui/icons-material/NearMeSharp";
 import Image1 from "./../assets/home.webp";
 
 import { ImgSlider } from "./ImgSlider/ImgSlider";
-import Analytic from "./Analytic";
-import { NewProject } from "./NewProject";
-import Ourpackage from "./OurPackeges/Ourpackage";
 import { useState } from "react";
 import HowItWorks from "./HowItWorks";
 import PricingPlans from "./pricingplan";

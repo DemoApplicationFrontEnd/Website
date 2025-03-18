@@ -4,8 +4,9 @@ import emailjs from "emailjs-com";
 import "./analytic.css";
 import AboutKeyImg from "./../assets/AboutKey-image.png";
 import AnimatedNumber from "./AnimatedNumber";
+import { Helmet } from "react-helmet-async";
 
-export default function Analytic() {
+export default function ContactUs() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -55,6 +56,17 @@ export default function Analytic() {
 
   return (
     <>
+      {/* <Helmet>
+        <title>About Us - Nirmaan Constructions</title>
+        <meta
+          name="description"
+          content="Learn more about Nirmaan Constructions, a top construction company in Karnataka."
+        />
+        <link
+          rel="canonical"
+          href="https://www.nirmaanconstructions.com/analytic"
+        />
+      </Helmet> */}
       <AnimatedNumber />
       <motion.div
         className="analytic-container"
@@ -123,7 +135,7 @@ export default function Analytic() {
                   className="input-field"
                   value={formData.service}
                   name="service"
-                  onChange={handleChange}
+                  onChange={handleChange} 
                   required
                 >
                   <option value="">Select Service</option>

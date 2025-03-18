@@ -59,6 +59,18 @@ import ongo9 from "./../projectsPics/ongoingpro/on9.jpeg";
 import ongo10 from "./../projectsPics/ongoingpro/on10.jpeg";
 import ongo11 from "./../projectsPics/ongoingpro/on11.jpeg";
 
+import ongo12 from "./../projectsPics/oldpics/Dcentermain.jpeg";
+import ongo13 from "./../projectsPics/oldpics/Dcenterdemo1.jpeg";
+import ongo14 from "./../projectsPics/oldpics/Dcenterdemo2.jpeg";
+import ongo15 from "./../projectsPics/oldpics/Dcenterdemo3.jpeg";
+
+import ongo16 from "./../projectsPics/oldpics/ongo5.jpg";
+import ongo17 from "./../projectsPics/oldpics/ongo65demo.jpeg";
+import ongo18 from "./../projectsPics/oldpics/ongo64demo.jpeg";
+import ongo19 from "./../projectsPics/oldpics/ongo63demo.jpeg";
+import ongo20 from "./../projectsPics/oldpics/ongo62demo.jpeg";
+import ongo21 from "./../projectsPics/oldpics/ongo61demo.jpeg";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import propertyVideo from "./../projectsPics/videos/property.mp4";
 import {
@@ -171,6 +183,27 @@ export const NewProject = () => {
       title: "Ongoing Project 4",
       images: [{ src: ongo4 }, { src: ongo5 }, { src: ongo6 }, { src: ongo7 }],
     },
+    {
+      title: "Ongoing Project 5",
+      images: [
+        { src: ongo12 },
+        { src: ongo13 },
+        { src: ongo14 },
+        { src: ongo15 },
+      ],
+    },
+    {
+      title: "OngoingProject 6",
+      images: [
+        { src: ongo16 },
+        { src: ongo17 },
+        { src: ongo18 },
+        { src: ongo19 },
+
+        { src: ongo20 },
+        { src: ongo21 },
+      ],
+    },
     // {
     //   title: "Ongoing Project 5",
     //   images: [{ src: newpic4 }, { src: newpic5 }, { src: newpic6 }],
@@ -196,7 +229,6 @@ export const NewProject = () => {
         : imageIndex + 1;
     setImageIndex(newIndex);
   };
-
   return (
     <>
       {/* Video Section */}
@@ -222,26 +254,26 @@ export const NewProject = () => {
 
       {/* Completed Projects Section */}
       <div>
-        <h2 className="text-center text-3xl text-[#333] mb-2">
+        <h2 className="text-center text-3xl text-[#333] mb-6 font-semibold">
           Completed Projects
         </h2>
-        <div className="flex flex-wrap justify-around">
+        <div className="flex flex-wrap justify-center gap-6">
           {completedProjects.map((project, i) => (
             <motion.div
-              className="w-[280px] bg-white shadow-lg rounded-lg p-4 mb-6"
+              className="w-[280px] bg-white shadow-lg rounded-lg p-4"
               key={i}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: i * 0.2 }}
             >
               <img
-                className="w-full h-[200px] object-cover rounded-lg"
+                className="w-full h-[200px] object-contain rounded-lg"
                 src={project.images[0].src}
                 alt={project.title}
               />
               <h3 className="text-xl font-semibold mt-4">{project.title}</h3>
               <button
-                className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg"
+                className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg "
                 onClick={() => handleViewDetails(project.images)}
               >
                 View Details
@@ -300,10 +332,10 @@ export const NewProject = () => {
             >
               <FontAwesomeIcon
                 icon={faCircleXmark}
-                className="absolute top-2 right-2 text-2xl cursor-pointer text-gray-600 hover:text-red-500"
+                className=" absolute top-2 right-2 text-2xl cursor-pointer text-gray-600 hover:text-red-500"
                 onClick={() => setOpen(false)}
               />
-              <div className="text-center text-lg font-semibold mb-4">
+              <div className="text-center text-lg font-semibold mb-4 ">
                 {selectedImages.length > 0
                   ? "Project Images"
                   : "No Images Available"}

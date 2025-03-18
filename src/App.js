@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Analytic from "./components/Analytic";
+import Analytic from "./components/ContactUs";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -54,7 +54,7 @@ function App() {
           <Route path="/layout" element={<Layout />} />
         </Routes>
         <a
-          href="https://api.whatsapp.com/send?phone=918549933305&text=Hello"
+          href="https://api.whatsapp.com/send?phone=918549933305&text=Hello!%20I'm%20interested%20in%20your%20construction%20services.%20Can%20you%20help%20me%20with%20my%20project?"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-5 right-5 flex items-center bg-green-500 text-white px-4 py-2 rounded-full shadow-lg hover:bg-green-600 transition-all"
@@ -62,6 +62,7 @@ function App() {
           <FaWhatsapp className="text-2xl mr-2" />
           <span className="hidden sm:inline">Need Help?</span>
         </a>
+
         <Footer />
         <Analytics />
       </Router>

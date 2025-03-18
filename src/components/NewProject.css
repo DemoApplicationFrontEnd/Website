@@ -25,7 +25,7 @@
 .project-gallery img {
   width: 150px;  /* Fixed width */
   height: 100px; /* Fixed height */
-  object-fit: cover;
+  object-fit:;
   border-radius: 10px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
