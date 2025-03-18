@@ -32,9 +32,9 @@ const AnimatedNumber = ({ finalValue }) => {
 const FactsSection = () => {
   const facts = [
     { label: "Years of Experience", value: 5 },
-    { label: "Projects We Work In", value: 150 },
+    { label: "Projects We Work In", value: 100 },
     { label: "Companies We Work With", value: 8 },
-    { label: "Successful Projects Done", value: 100 },
+    { label: "Successful Projects Done", value: 80 },
   ];
 
   return (
