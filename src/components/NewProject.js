@@ -89,7 +89,7 @@ export const NewProject = () => {
 
   const completedProjects = [
     {
-      title: "Completed Project 1",
+      title: "Dhanashree Convention Hall Project",
       images: [
         { src: newpic1 },
         { src: newpic2 },
@@ -105,7 +105,7 @@ export const NewProject = () => {
       ],
     },
     {
-      title: "Completed Project 2",
+      title: "Residential Project",
       images: [
         { src: newpic15 },
         { src: newpic16 },
@@ -116,7 +116,7 @@ export const NewProject = () => {
       ],
     },
     {
-      title: "Completed Project 3",
+      title: "Residential Project",
       images: [
         { src: newpic21 },
         { src: newpic22 },
@@ -129,7 +129,7 @@ export const NewProject = () => {
       ],
     },
     {
-      title: "Completed Project 4",
+      title: "Residential Project",
       images: [
         { src: newpic30 },
         { src: newpic32 },
@@ -140,7 +140,7 @@ export const NewProject = () => {
       ],
     },
     {
-      title: "Completed Project 5",
+      title: "Commercial Complex Project",
       images: [
         { src: newpic40 },
         { src: newpic41 },
@@ -158,33 +158,7 @@ export const NewProject = () => {
   // Define images specific to each project
   const ongoingProjects = [
     {
-      title: "Ongoing Project 1",
-      images: [
-        { src: newpic44 },
-        { src: ongo1 },
-        { src: ongo2 },
-        { src: ongo3 },
-      ],
-    },
-    {
-      title: "Ongoing Project 2",
-      images: [
-        { src: ongo8 },
-        { src: ongo9 },
-        { src: ongo10 },
-        { src: ongo11 },
-      ],
-    },
-    {
-      title: "Ongoing Project 3",
-      images: [{ src: newpic4 }, { src: newpic5 }, { src: newpic6 }],
-    },
-    {
-      title: "Ongoing Project 4",
-      images: [{ src: ongo4 }, { src: ongo5 }, { src: ongo6 }, { src: ongo7 }],
-    },
-    {
-      title: "Ongoing Project 5",
+      title: "Dhanashree Business Center Project",
       images: [
         { src: ongo12 },
         { src: ongo13 },
@@ -193,7 +167,7 @@ export const NewProject = () => {
       ],
     },
     {
-      title: "OngoingProject 6",
+      title: "Ongoing Residential Project",
       images: [
         { src: ongo16 },
         { src: ongo17 },
@@ -204,6 +178,33 @@ export const NewProject = () => {
         { src: ongo21 },
       ],
     },
+    {
+      title: "Ongoing Commercial Project",
+      images: [
+        { src: newpic44 },
+        { src: ongo1 },
+        { src: ongo2 },
+        { src: ongo3 },
+      ],
+    },
+    {
+      title: "Ongoing Residential Project",
+      images: [
+        { src: ongo8 },
+        { src: ongo9 },
+        { src: ongo10 },
+        { src: ongo11 },
+      ],
+    },
+    {
+      title: "Ongoing Residential Project",
+      images: [{ src: newpic4 }, { src: newpic5 }, { src: newpic6 }],
+    },
+    {
+      title: "Ongoing Commercial Project",
+      images: [{ src: ongo4 }, { src: ongo5 }, { src: ongo6 }, { src: ongo7 }],
+    },
+
     // {
     //   title: "Ongoing Project 5",
     //   images: [{ src: newpic4 }, { src: newpic5 }, { src: newpic6 }],
@@ -267,7 +268,7 @@ export const NewProject = () => {
               transition={{ duration: 0.5, delay: i * 0.2 }}
             >
               <img
-                className="w-full h-[200px] object-contain rounded-lg"
+                className="w-full h-[200px] object-fill rounded-lg"
                 src={project.images[0].src}
                 alt={project.title}
               />

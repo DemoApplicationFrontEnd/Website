@@ -63,6 +63,14 @@ export default function Cards() {
 
   return (
     <div className="cards-container">
+      <motion.div
+        className="consultation-form-container"
+        initial={{ x: 50, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
+        <ConsultationForm />
+      </motion.div>
       <div className="info-section">
         <div className="info-text">
           <p className="title">TALK TO US AND</p>
@@ -154,14 +162,6 @@ export default function Cards() {
           </div>
         </div>
       </div>
-      <motion.div
-        className="consultation-form-container"
-        initial={{ x: 50, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.8 }}
-      >
-        <ConsultationForm />
-      </motion.div>
     </div>
   );
 }

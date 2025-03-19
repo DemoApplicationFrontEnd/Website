@@ -8,6 +8,21 @@ const quotes = [
   "A Solid Reputation like Concrete",
   "Highest Standards of Construction",
   "Strong Foundation for Tomorrow",
+  "Crafting Excellence, One Brick at a Time.",
+  "Building Dreams, Strengthening Realities.",
+  "Engineering a Better Tomorrow.",
+  "Designing with Precision, Building with Passion.",
+  "Where Innovation Meets Infrastructure.",
+  "Bridging Ideas, Constructing Success.",
+  "Turning Blueprints into Landmarks.",
+  "Stronger Foundations, Smarter Solutions.",
+  "Constructing Quality, Cementing Trust.",
+  "Your Vision, Our Structure.",
+  "From Concept to Concrete – We Build It All.",
+  "Sustainable Construction for a Brighter Future.",
+  "Exceeding Expectations, One Structure at a Time.",
+  "Building Beyond Limits.",
+  "Durability, Design, and Dedication.",
 ];
 
 const Background = () => {
